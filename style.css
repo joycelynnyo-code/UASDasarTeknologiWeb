@@ -1,0 +1,334 @@
+/* --- GENERAL --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, darkblue 0%, #8ec5fc 100%);
+    color: #333;
+}
+
+/* --- NAVBAR --- */
+/* Navbar full-width tweaks */
+.navbar {
+    transition: all 0.4s;
+    padding: 1.5rem 0; /* reduce padding now navbar uses full width px-5 */
+    background: linear-gradient(135deg, #0d3b66, blue);
+    
+}
+.navbar.scrolled {
+    padding: 1rem 0;
+    background-color: #0d6efd;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.navbar-brand {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-left: 0; /* remove extra margin */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* subtle shadow */
+}
+.navbar-nav {
+    gap: 2rem;
+}
+.nav-link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.95);
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* subtle shadow */
+}
+.nav-link:hover {
+    transform: translateY(-3px);
+}
+
+
+/* --- SECTIONS --- */
+.section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+/* Profile / Hero Section */
+#profile {
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    position: relative;
+    margin-top: -140px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.profile-img-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.profile-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.profile-photo:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+#about {
+    border-radius: 25px;
+}
+
+.about-text {
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Get in Touch button customization */
+.btn-get-in-touch {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin-top: 2rem;              /* Bigger text */
+    padding: 1rem 3rem;              /* Bigger button */
+    background: linear-gradient(135deg, lightgray, #ffffff); /* Gray to white gradient */
+    color: #333;                     /* Dark text */
+    border: 2px solid #ccc;          /* Subtle border */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Soft shadow */
+    transition: all 0.3s ease, box-shadow 0.4s ease; 
+    border-radius: 50px;/* Smooth transition including shadow */
+}
+
+.btn-get-in-touch:hover {
+    background: linear-gradient(135deg, #d0d0d0, #f5f5f5); /* Slightly darker on hover */
+    transform: scale(1.05);                                 /* Slight scale-up */
+    color: #000;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25), 0 0 15px rgba(255,255,255,0.5); /* Glow effect */
+}
+
+/* Project Cards */
+
+#projects {
+    padding-top: 3rem;   /* reduce top padding to bring it closer to About section */
+    padding-bottom: 10rem; /* keep bottom padding spacious */
+}
+
+#projects h2 {
+    font-size: 3rem;       /* bigger section title */
+    margin-bottom: 3rem;   /* slightly closer spacing below title */
+}
+
+.project-card {
+    padding: 2rem;          /* more inner space */
+    border-radius: 1.5rem;  /* slightly rounder cards */
+    transition: all 0.3s ease;
+}
+
+.project-card .card-title {
+    font-size: 2.5rem;      /* bigger project titles */
+}
+
+.project-card .card-text {
+    font-size: 1.6rem;      /* slightly bigger description text */
+}
+
+.icon-box {
+    width: 100px;                  /* bigger icons */
+    height: 100px;
+    margin: 0 auto;                /* center horizontally in column */
+    background: #f0f8ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;           /* center vertically */
+    justify-content: center;       /* center horizontally */
+    font-size: 2rem;               /* bigger icon size */
+    transition: background 0.3s;
+}
+
+
+.project-card:hover .icon-box {
+    background: #e7f1ff;
+}
+
+#about h5.card-title {
+    font-size: 15px;
+}
+
+#about {
+    background-color: #ffffff;
+}
+#about p.motto {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+}
+#about p.text-secondary {
+    font-weight: 200;
+    font-size: 25px;
+    text-align: justify;
+    text-justify: inter-word; /* optional: better spacing for justified text */
+}
+
+/* ===== SKILLS SECTION ===== */
+#skills {
+    border-radius: 30px;
+    padding-top: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 6rem;
+    background-color: #f8f9fa; /* soft light background */
+}
+
+#skills h2 {
+    font-size: 2.8rem;
+}
+
+#skills .skill-icon i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0d6efd;
+}
+
+#skills .progress {
+    height: 20px;
+    border-radius: 10px;
+    background-color: #e9ecef;
+    margin-bottom: 2rem;
+}
+
+#skills .progress-bar {
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* ===== DOWNLOAD RESUME BUTTON ===== */
+#resume {
+    width: 800px;
+    length: 70px;
+    border-radius:30px ;
+    padding: 2rem;
+    background: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin: auto;
+}
+
+#resume h2 {
+    font-size: 2.8rem;
+}
+
+#resume .btn {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #0d3b66, blue); ;
+}
+
+#resume .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== SKILLS SECTION ===== */
+#skills {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #f8f9fa; /* soft light background */
+}
+
+#skills h2 {
+    font-size: 2.8rem;
+}
+
+#skills .skill-icon i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0d6efd;
+}
+
+/* Rounded progress bar container */
+#skills .progress {
+    height: 20px;
+    border-radius: 15px;        /* <-- rounded container */
+    background-color: #e9ecef;
+    margin-bottom: 2rem;
+}
+
+/* Rounded progress bar fill */
+#skills .progress-bar {
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 15px;        /* <-- rounded fill */
+}
+
+
+
+/* --- Contact Section Bigger & Spacing --- */
+#contact {
+    padding-top: 5rem;     /* more space above */
+    padding-bottom: 8rem;  /* more space below */
+}
+
+#contact h2 {
+    font-size: 3rem;       /* bigger heading */
+    margin-bottom: 3rem;
+}
+
+#contact .form-control {
+    font-size: 1.2rem;     /* bigger input text */
+    padding: 1.2rem;       /* bigger input fields */
+    border-radius: 1rem;
+}
+
+#contact textarea.form-control {
+    height: 200px;         /* taller textarea */
+}
+
+#contact button[type="submit"] {
+    font-size: 1.5rem;           /* bigger button */
+    padding: 1.2rem 3rem;
+    border-radius: 50px;         /* rounded pill shape */
+    transition: all 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(13,110,253,0.3);
+}
+
+
+/* Inputs */
+.form-control {
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.15);
+    border-color: #0d6efd;
+    background-color: #fff;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === TAMBAHAN KHUSUS UNTUK POP-UP (MODAL) === */
+/* ========================================= */
+.modal-content {
+    border-radius: 2rem; /* Membuat sudut pop-up sangat bulat */
+    border: none;        /* Menghilangkan garis border agar lebih bersih */
+}
+
+.modal-body i {
+    /* Animasi pantulan kecil saat icon centang muncul */
+    animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
